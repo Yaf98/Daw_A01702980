@@ -1,26 +1,52 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<!-- Etiqueta para que se muestren correctamente caracteres como los acentos acentos-->
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
 	<title>Laboratorio 1</title>
 </head>
 
+
+<!-- Style -->
 <style type="text/css">
 	body{
-		padding: 40px;
+		margin-top: 50px;
+		margin-left: 120px;
+		margin-right: 120px;
+		margin-bottom: 120px;
 	}
+	
+	.font{
+		font-size: 30px;
+		text-align: center;
+		background-color: #99ffd6;
+	}
+
+	article{
+		text-align: justify;
+
+	}
+
+	a{
+		size: 100px;
+	}
+
 
 </style>
 
 
 <body>
 	<header><h1 align="center">Laboratorio 1: Introducción a las aplicaciones web, HTML5 y ciclo de vida de los sistemas de información<h1/></header>
-	<nav>
-		<a href=""><strong>Sobre mi</strong></a>
-		<a href=""><strong>Conceptos</strong></a>
-		<a href=""><strong>Preguntas</strong></a>
+	<!--Nav element that only contains anchors -->
+	<nav class="font">
+		<a href="#yo"><strong>Sobre mi</strong></a>
+		<a href="#conceptos"><strong>Conceptos</strong></a>
+		<a href="#preguntas"><strong>Preguntas</strong></a>
+		<a href="#referencias"><strong>Referencias</strong></a>
 	</nav>
+	<br>
 
+	<!-- Contiene información de contacto-->
 	<address>
 		Datos de contacto: <br>
 		Manuel Yafté Gallegos López <br>
@@ -31,7 +57,7 @@
 	</address>
 
 	<article>
-		<header><h3>Breve descripción sobre mi: </h2></header>
+		<header><a name="yo"><h2>Breve descripción sobre mi: </h2></a></header>
 		Mi nombre es Manuel Yafté Gallegos López. Me gusta mantener una mentalidad de aprendizaje en todo momento, disfruto aprender casi sobre cualquier cosa y en cualquier medio; puede ser en libros, revistas, internet, de las personas, etc. También me gusta practicar cualquier actividad física o deporte. 
 
 	</article>
@@ -49,7 +75,7 @@
 
 	<hr>
 	<article>
-		<header><h2>Conceptos</h2></header>
+		<header><a name="conceptos"><h2>Conceptos</h2></a></header>
 			
 			<p>
 				<strong><h3>URL:</h3></strong> 
@@ -68,10 +94,8 @@
 				<strong><h3>Métods de petición y códigos HTTP:</h3></strong> 
 				Los métodos de peticón son commandos que dan dan instrucciones al servidor sobre lo que debe hacer. Así como los métodos de petición le dicen que hacer al servidor, los codigos de estatus le dicen al cliente que fue lo que ocurrió, por ejemplo: si la consulta fue exitosa, si hubo un error, etc[3].
 			</p>
-			
-	
-
-			<img src="table.jpg" alt="img">
+			<img src="imagenes/table.jpg" width="800px"><br><br>
+			<img src="imagenes/table2.jpg" width="800px">
 			
 
 			<p>
@@ -118,7 +142,7 @@
 	</article>
 	<hr>
 	<article>
-		<header><h2>Preguntas</h2></header>
+		<header><a name="preguntas"><h2>Preguntas</h2></a></header>
 		<p>
 			<strong><h3>¿Cuál es el propósito de los métodos HTTP: GET, HEAD, POST, PUT, PATCH, DELETE?</h3></strong>
 			
@@ -235,8 +259,13 @@
 			<ul>
 				<li>Utilizo Firefox</li>
 			</ul>
-			<img src="">
+			
 		</p>
+		<img src="imagenes/firefox.jpg" width="450px">
+		
+			
+
+		
 
 		<p>
 			<strong><h3>¿Cuál es el ciclo de vida de los sistemas de información?</h3></strong>
@@ -250,7 +279,7 @@
 				<li>Corrección</li>
 				<li>Mantenimiento</li>
 			</ul>
-			<img src="">
+			
 		</p>
 
 		<p>
@@ -262,15 +291,16 @@
 				<li>Implementación</li>
 				<li>Pruebas</li>
 			</ul>
-			<img src="">
+			
 		</p>
 		
 	
 	</article>
 	<hr>
+	<br>
 	<footer>
 
-		<strong><h3>Referencias:</h3></strong>
+		<strong><a name="referencias"><h3>Referencias:</h3></a></strong>
 		<nav>
 			[1]<a href="">https://kb.iu.edu/d/adnz</a><br>
 			[2]<a href="">http://www.sussex.ac.uk/its/help/faq?faqid=716</a><br>
@@ -278,7 +308,7 @@
 			[4] <a href="">https://www.ibm.com/support/knowledgecenter/es/SSEPGG_8.2.0/com.ibm.db2.ii.doc/opt/c0007799.htm </a><br>
 			[5] <a href="">https://www.w3schools.com/html/html_xhtml.asp</a><br>
 			[6] E.Freeman y E.Robson, Head First HTML5 Programming,31, 2011 <br>
-			[7] <br>
+			[7] M. Haverbeke, Eloquent JavaScript: A Modern Introduction to Programming, 6, 2018<br>
 			[8] <a href="">http://php.net/manual/es/intro-whatis.php</a><br>
 			[9] <a href="">https://docs.oracle.com/javaee/5/tutorial/doc/bnagy.html</a><br>
 			[10] <a href="">https://www.w3schools.com/xml/ajax_intro.asp </a><br>
@@ -287,8 +317,8 @@
 			
 
 	</footer>
-	
-	<footer><a href="https://www.sublimetext.com/">Sublime Text</a></footer>
+	<br>
+	<footer>Editor utilizado: <a href="https://www.sublimetext.com/">Sublime Text</a></footer>
 
 
 
