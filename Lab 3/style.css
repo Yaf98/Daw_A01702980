@@ -1,0 +1,33 @@
+	body{
+		margin-top: 30px;
+		margin-right: 70px;
+		margin-bottom: 70px;
+		margin-left: 70px;
+	}
+	
+	.font{
+		font-size: 30px;
+		text-align: center;
+		background-color: #99ffd6;
+	}
+
+	.main_header{
+		font-size: 40px;
+		text-align: center;
+	}
+
+	article{
+		text-align: justify;
+
+	}
+
+	a{
+		size: 100px;
+	}
+	h1{
+		text-align: center;
+	}
+
+	header{
+		font-size: 22px;
+	}
