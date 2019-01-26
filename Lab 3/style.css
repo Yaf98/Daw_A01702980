@@ -1,33 +1,94 @@
-	body{
-		margin-top: 30px;
-		margin-right: 70px;
-		margin-bottom: 70px;
-		margin-left: 70px;
-	}
+*{
+
+	magenes/table.jpg
+	padding-top: 0px;
+	margin-top: 0px;		/* UNIVERSAL SELECTOR*/
+}
+body{
 	
-	.font{
-		font-size: 30px;
-		text-align: center;
-		background-color: #99ffd6;
-	}
+	margin-right: 70px;
+	margin-bottom: 70px;
+	margin-left: 70px;
 
-	.main_header{
-		font-size: 40px;
-		text-align: center;
-	}
+}
 
-	article{
-		text-align: justify;
+article{
+	text-align: justify;
+}
 
-	}
+a{
+	size: 100px;
+}
 
-	a{
-		size: 100px;
-	}
-	h1{
-		text-align: center;
-	}
+h1{
+	text-align: center;
+}
 
-	header{
-		font-size: 22px;
-	}
+header{
+	font-size: 22px;
+}
+
+#adress{
+	background-color: #fbefcc;
+}
+
+#referencias_style{
+	background: #E0EAFC;  
+	background: -webkit-linear-gradient(to right, #CFDEF3, #E0EAFC);  
+	background: linear-gradient(to right, #CFDEF3, #E0EAFC); 
+
+	text-align: center;
+	/* ID SELECTOR*/
+}
+#first_section{
+	background-color:#f0efef ;
+}
+
+#second_section{
+	background-color: #ddeedd ;
+}
+
+#third_section{
+	background-color: #c2d4dd;
+}
+
+#fourth_section{
+	background-color: #f9ccac;
+}
+
+.main_header{		/* GENERIC SELECTOR*/
+	font-size: 40px;
+	text-align: center;
+
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  width: 100%;
+ 
+}
+
+.topnav a {
+
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 19px;
+}
+
+.topnav a:hover { /*APPLY WHEN SOMETHING HAPPENS*/
+  background-color: #3ead47;
+  color: white;
+}
+
+.topnav a.active{
+  background-color: #4CAF50;
+  color: white;
+}
+
+
+
+

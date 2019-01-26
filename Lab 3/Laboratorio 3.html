@@ -9,22 +9,23 @@
 
 
 <body>
-	<header class="main_header"><b>Laboratorio 1: Introducción a las aplicaciones web, HTML5 y ciclo de vida de los sistemas de información</b></header>
 	
-	<br> 	
+	<a href="" name="inicio" class="topnav"></a>
+
 	<!--Nav element that only contains anchors -->
-	<nav class="font">
+	<nav class="topnav">
 		<a href="#yo"><strong>Sobre mi</strong></a>
 		<a href="#conceptos"><strong>Conceptos</strong></a>
 		<a href="#preguntas"><strong>Preguntas</strong></a>
-		<a href="#referencias"><strong>Preguntas Laboratorio 3</strong></a>
+		<a href="#preguntas_lab3_css"><strong>CSS</strong></a>
 		<a href="#referencias"><strong>Referencias</strong></a>
 
 	</nav>
 	<br>
+	<header class="main_header"><b>Lab 3: CSS</b></header>
 
 	<!-- Contiene información de contacto-->
-	<address>
+	<address id="adress">
 		Datos de contacto: <br>
 		Manuel Yafté Gallegos López <br>
 		A01702980 <br>
@@ -33,7 +34,7 @@
 
 	</address>
 	<br>
-	<article>
+	<article id="first_section">
 		<header>
 			<a name="yo">
 				<b>Breve descripción sobre mi:</b>
@@ -41,33 +42,23 @@
 		</header>
 		Mi nombre es Manuel Yafté Gallegos López. Me gusta mantener una mentalidad de aprendizaje en todo momento, disfruto aprender casi sobre cualquier cosa y en cualquier medio; puede ser en libros, revistas, internet, de las personas, etc. También me gusta practicar cualquier actividad física o deporte. 
 
-	</article>
-	<br>
-	<article>
 		<header>
-			<a name="yo">
-				<b>Pequeño proyecto:</b>
-			</a>
+			<a name="yo"><b>Pequeño proyecto:</b></a>
 		</header>
-	
-		
 		Ahora estoy realizando un Mooc sobre Python for Data Science. Es de nivel introductorio, pero es interesante. Gané una beca para el pago de este. Algo curioso es que me enteré de ello por mi novia, quien estudia negocios. Planeo ganar otra beca para un nanodegree en udacity sobre Machine Learning, Data Science o Artifficial intgelligence. Me interesan las aplicaciones de estas ramas y me parecen interesantes los proyectos que se asignan en la plataforma 
-	</article>
-	<br>
-	<article>
 		<header>
 			<a name="yo">
 				<b>Algunos interes que tengo:</b>
 			</a>
 		</header>
-	
-
 		Quiero aprovechar las materias de bases de datos y Desarrollo web para materializer un Proyecto que genere valor para alguien. Me interesan las ciencias computacionales más que la ingeniería de software. En el futuro quisiera realizar investigación en alguna rama de las ciencias computacionales. 
+
 	</article>
+	
 	<br>
 
 	<hr>
-	<article>
+	<article id="second_section">
 		<header><a name="conceptos"><b>Conceptos</b></a></header>
 			
 				<br>
@@ -142,8 +133,8 @@
 
 	</article>
 	<hr>
-	<article>
-		<header><a name="preguntas">Preguntas</a></header>
+	<article id="third_section">
+		<header><a name="preguntas"><b>Preguntas Laboratorio 1</b></a></header>
 		<br>
 			<strong>¿Cuál es el propósito de los métodos HTTP: GET, HEAD, POST, PUT, PATCH, DELETE?</strong>
 			
@@ -297,8 +288,9 @@
 	</article>
 	<hr>
 
-	<article>
-		<header><a name="preguntas_lab3_css"><b>Preguntas Laboratorio 3</b></a></header>
+	<article id="fourth_section">
+		<header><a name="preguntas_lab3_css"><b>Preguntas Laboratorio 3: CSS</b></a></header>
+		<br>
 		<strong>¿Como ingeniero de software ¿cuál es tu recomendación sobre el uso de !important en un CSS? </strong>[11]
 		<ul>
 			<li>Es necesario cuando queremos que algunas reglas o condiciones, las más importantes antes, se ejecuten sin importar nada </li>
@@ -308,33 +300,47 @@
 
 		<br>
 		<strong>Si se pone una imagen de fondo en una página HTML, ¿por qué debe escogerse con cuidado?[12]</strong>
+		
 		<ul>
-			<li>Porque debe llamar la atención y ser agradable con el usuario al instante, de lo contrario es probable que abandone la página o tengo una mala experiencia.</li>
-			<li>De la imagen de fondo depende atraer a los usuarios, es un estrategia de que sea visitada. Además, es una manera visual de transmitir un mensaje. Una imagen de fondo habla la calidad del sitio</li>
+			<li>Se recomienda lo siguiente:</li>
+			<ul>
+				<li>Contraste con el texto de manera que no sea difícil leer el texto </li>
+				<li>Buena resolución</li>
+				<li>Un buen tamaño, no demasiado grande, no demasiado pequeña</li>
+				<li>Utilizar patrones de imágenes</li>
+				<li>Escoger una imagen de manera que sea responsiva</li>
+			</ul>
+		</ul>
+		<br>
+		<strong>Como ingeniero de software, ¿cuál es tu recomendación al elegir las unidades de una propiedad de estilo entre %, px y pt?[13]</strong>
 
-			<th>Se recomienda</th>
-			<th></th>
-
-			<tr>
-				<td>hola</td>
-				<td>hola</td>
-			</tr>
-			<tr></tr>
-			<tr></tr>
-			<tr></tr>
-			
+		<ul>
+			<li>Conocer que existen unidades absolutas y unidades relativas</li>
+			<li>Longitudes absolutas:</li>
+			<ul>
+				<li>Están unidades parecerán exactamente del tamaño que se definen. Excepto px, son relativos a la vista dl dispositivo </li>
+				<li>No recomendadas para ser usadas en pantalla, ya que los tamaños de las pantallas varían mucho. Pueden ser usadas si el medio de salida es conocido</li>
+				<img src="imagenes/abs_length.jpg" alt="abs_length" width="700">
+				
+			</ul>
+			<li>Longitudes relativas:</li>
+			<ul>
+				<li>Especifican una longitud relativo a otra propiedad de Longitudes</li>
+				<img src="imagenes/relative_length.jpg" alt="relative_length" width="700">
+			</ul>
 			
 		</ul>
-
-		<strong></strong>
-
+		<strong>¿Por qué el uso de una versión minimizada del CSS mejora el rendimiento del sitio?</strong>
+		<ul>
+			<li>Al reducir el tamaño del CSS, se mejora el rendimiento del sitio, ya que se minimizan información extra al código como los comentarios, espacios, saltos de línea, etc. De esta manera, se mejora la accesibilidad, se reduce el tiempo de carga y el uso de banda de ancho[14]</li>
+		</ul>
 
 	</article>
 
 	<hr>
-	<footer>
+	<footer id="referencias_style">
 
-		<strong><a name="referencias">Referencias:</a></strong>
+		<strong><a name="referencias"><b>Referencias:</b></a></strong>
 		<nav>
 			[1]<a href="">https://kb.iu.edu/d/adnz</a><br>
 			[2]<a href="">http://www.sussex.ac.uk/its/help/faq?faqid=716</a><br>
