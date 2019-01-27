@@ -1,15 +1,25 @@
 *{
-
-	magenes/table.jpg
+	font-family: Baskerville, "Baskerville Old Face", "Goudy Old Style", Garamond, "Times New Roman", serif;;
+	margin: auto;
 	padding-top: 0px;
 	margin-top: 0px;		/* UNIVERSAL SELECTOR*/
 }
+
 body{
 	
 	margin-right: 70px;
 	margin-bottom: 70px;
 	margin-left: 70px;
+	padding-right: 20px;
+	padding-left: 20px;
+	padding-bottom: 20px;
 
+}
+
+img{
+	margin-top: 15px;
+	margin-left: 40px;
+	margin-bottom: 15px;
 }
 
 article{
@@ -24,12 +34,15 @@ h1{
 	text-align: center;
 }
 
+
 header{
-	font-size: 22px;
+	font-size: 1.5em;
+
 }
 
 #adress{
 	background-color: #fbefcc;
+	padding: 25px;
 }
 
 #referencias_style{
@@ -41,20 +54,29 @@ header{
 	/* ID SELECTOR*/
 }
 #first_section{
+	padding: 30px;
 	background-color:#f0efef ;
 }
 
 #second_section{
+	padding: 30px;
 	background-color: #ddeedd ;
 }
 
 #third_section{
+	padding: 30px;
 	background-color: #c2d4dd;
 }
 
 #fourth_section{
+	padding: 30px;
 	background-color: #f9ccac;
 }
+
+.li_none{
+	list-style: none;
+}
+
 
 .main_header{		/* GENERIC SELECTOR*/
 	font-size: 40px;
