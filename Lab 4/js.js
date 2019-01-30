@@ -1,10 +1,18 @@
+
+
+document.getElementById("squares_cubes").onclick = squares_cubes;
+document.getElementById("").onclick = squares_cubes;
+document.getElementById("").onclick = squares_cubes;
+document.getElementById("").onclick = squares_cubes;
+document.getElementById("").onclick = squares_cubes;
+
 function squares_cubes(){
 
 	let num = prompt('Da un numero');
 	let i;
 
 	for(i=1; i<=num; i++){
-		
+
 		document.write("<th>"+i+"\n");
 		document.write("<th>"+i*i+"\n");
 		document.write("<th>"+i*i*i+"\n");
@@ -12,6 +20,8 @@ function squares_cubes(){
  	  	
 	}
 }
+
+
 
 function sum(){
 
@@ -34,9 +44,18 @@ function sum(){
 }	
 
 function counter(){
-	
+	prompt("Cuantos elementos deseas en el arreglo");
+	let array = new Array();
+
+	for(var i=0;num;i++){
+
+	}
 	/*Cantidad de 0s*/
 	/*Cantidad de numeros mayores*/
 	/*Cantidad de numeros negativos*/
+}
+
+function average(){
+	
 }
 

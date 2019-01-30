@@ -2,18 +2,108 @@
 <html>
 <head>
 	<title>Laboratorio 4</title>
-	<script type="text/javascript" src="js.js"></script>
+	
 </head>
 <body>
 	<h1>Laboratorio 4: Fundamentos de JavaScript</h1>
-	<button onclick= "squares_cubes()">Function 1</button>
-	<button onclick="sum()">Function 2</button>
+	<button id="squares_cubes">Function 1</button>
+	<br>
+
+	<article>
+		<header>Preguntas sobre JavaScript</header>
+		<br>
+		<strong>¿Qué diferencias y semejanzas hay entre Java y JavaScript?[1]</strong>
+		<ul>
+			<li>JavaScript es un lenguaje desarrollado por Netscape</li>
+			<li>JavaScript no forma parte de Java, ni tampoco es una extension</li>
+			<li>Usualmente JavaScript es usado para darle interactividad a los sitios web</li>
+			<li>Las aplicaciones creadas en JavaScript corren en navegadores web, mientras que las aplicaciones de Java corren en una maquina virtual </li>
+			<li>El código JavaScript necesita ser interpretado. Por otro lado, el código de Java se compila</li>
+
+			
+		</ul>
+
+		<strong>¿Qué métodos tiene el objeto Date? (Menciona al menos 5*) </strong><br><br>
+		El objeto Date muestra la hora de acuerdo con la configuración de la zona del navegador. Algunos de sus métodos son[2] : 
+		
+		<ol>
+			<li>getTime()</li>
+			<li>getDay()</li>
+			<li>getHours()</li>
+			<li>getMonth()</li>
+			<li>getSeconds</li>
+			<li>getDate()</li>
+			<li>getFullYear()</li>
+		</ol>
+
+		<strong>¿Qué métodos tienen los arreglos? (Menciona al menos 5*)[3]</strong>
+		<ol>
+			<li>filter()</li>
+			<li>findIndex()</li>
+			<li>from()</li>
+			<li>concat()</li>
+			<li>forEach()</li>
+			<li>entries()</li>
+		</ol>
+
+		<strong>¿Qué diferencias y semejanzas hay entre Java y JavaScript?</strong>
+		<ul>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+
+		<strong>¿Cómo se declara una variable con alcance local dentro de una función?[3] </strong><br>
+		<p>Para declarar una función con alance 	local sólo basta anteponer la palabra reservada "let"<br>
+			Por ejemplo: <i>let </i> nombre_variable
+		</p>
+
+		<strong>¿Qué implicaciones tiene utilizar variables globales dentro de funciones?</strong>
+		<ul>
+			<li>Las variables globales en las funciones pueden ser sobre escritas por otros scripts[4]</li>
+
+		</ul>
+		
+		<strong>¿Qué método de String se puede utilizar para buscar patrones con expresiones regulares?¿Para qué podrías utilizar esto en una aplicación web?</strong>
+		<ul>
+			<li>search()</li>
+			<li>indexOf()</li>
+			<li>slice()</li>
+			<li>substring()</li>
+			<li>substr()</li>
+		</ul>
 
 
-	<button>Function 3</button>
-	<button>Function 4</button>
-	<button>Function 5</button>
-	
+
+
+	</article>
+
+	<footer>
+		<strong>Referencias</strong>
+		<nav>
+			<table>
+				<tr>
+					<td><a href="https://www.java.com/en/download/faq/java_javascript.xml">[1]https://www.java.com/en/download/faq/java_javascript.xml</a></td>
+				</tr>
+				<tr>
+					<td><a href="https://www.w3schools.com/js/js_date_methods.asp">[2]https://www.w3schools.com/js/js_date_methods.asp</a></td>
+				</tr>
+				<tr>
+					<td><a href="https://www.w3schools.com/jsref/jsref_obj_array.asp">[3]https://www.w3schools.com/jsref/jsref_obj_array.asp</a></td>
+				</tr>
+				<tr>
+					<td><a href="https://www.w3schools.com/js/js_let.asp">https://www.w3schools.com/js/js_let.asp</a></td>
+				</tr>
+
+			</table>
+
+		</nav>
+		
+	</footer>
+
+
+	<script type="text/javascript" src="js.js"></script>
 </body>
 
 </html>
