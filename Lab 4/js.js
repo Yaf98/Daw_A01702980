@@ -1,3 +1,8 @@
+/*
+	El profesor dijo que podíamos usar cualquier cosa para imprimir resultados, no únicamente document.write()
+	Yo use alert()
+*/
+
 document.getElementById("squares_cubes").onclick = squares_cubes;
 document.getElementById("sum_numbers").onclick = sum_numbers;
 document.getElementById("count_numbers").onclick = count_numbers;
@@ -6,18 +11,16 @@ document.getElementById("invert_number").onclick = invert_number;
 document.getElementById("problem_solution").onclick = problem_solution;
 
 function squares_cubes(){
-
 	let num = prompt('Da un numero');
 	let i;
 
-	for(i=1; i<=num; i++){
+	let string = "";
 
-		document.write("<th>"+i+"\n");
-		document.write("<th>"+i*i+"\n");
-		document.write("<th>"+i*i*i+"\n");
-	  	document.write("<br>");
- 	  	
+	for(i=1; i<=num; i++){
+		string = string + "     " + i + "              "+ i*i + "             " + i*i*i + "\n";
 	}
+
+	alert("Numero   Cuadrado   Cubo\n" + string);	
 }
 
 
@@ -49,7 +52,13 @@ function count_numbers(){
 
 	for(i=0;i<num;i++){
 		array[i] = Math.floor((Math.random()*50)-40);
-		window.alert(array[i]);
+	}
+
+	let string="";
+
+	for (i=0;i<num;i++) {
+		string = string+"," +array[i];
+			
 	}
 
 	for(i=0;i<num;i++){
@@ -63,9 +72,8 @@ function count_numbers(){
 			}
 		}
 	}
-	document.write("Hay " + positivos + " numero(s) positivos <br>")
-	document.write("Hay " + ceros + " ceros <br>");
-	document.write("Hay " + negativos + " numero(s) negativo <br>");
+	string = string + "\nHay " + positivos + " numero(s) positivos" + "\nHay " + ceros + " ceros " + "\nHay " + negativos + " numero(s) negativo";
+	alert("Arreglo generado: " + string);
 }
 
 function average_row(){
@@ -79,20 +87,24 @@ function average_row(){
 	}
 
 	let suma=0;
-
+	
+	let string ="";
 	for(i=0;i<10;i++){
 		for(j=0;j<10;j++){
 			suma = suma+array[i][j];
+			string = string + array[i][j] + "  "; 
+			
 		}
-		window.alert("Promedio = " + suma/10);
+		string = string + "Promedio = " + (suma/10) + "\n";
 		suma = 0;
 	}
-
+	alert("Matriz con promedio por fila: " + "\n" + string);
 }
 
 function invert_number(){
 	let numero = prompt("Ingresa un numero");
-	document.write(numero.split("").reverse().join(""));
+	alert("El numero invertido es: " + numero.split("").reverse().join(""))
+	
 	
 }
 

@@ -6,7 +6,6 @@ body{
   	max-width: 50em;
   	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
   	line-height: 1.5;
-  	background-image: url(imagenes/background.png);*/
   	/*font-style: bold;*/
 }	
 
@@ -17,7 +16,7 @@ body{
 }
 
 #article_preguntas{
-	background-color: #eecbff;
+	background-color:#f0efef;
 	padding: 25px;	
 }
 
@@ -40,8 +39,9 @@ img{
 }
 
 h1{
+
 	text-align: center;
-	background-color: #ffd4e5;
+	background-color: #c2d4dd ;
 }
 
 header{
@@ -53,6 +53,6 @@ a{
 }
 
 footer{
-	background-color:#8b9dc3;
+	background-color:#E0EAFC;
 	padding: 20px;
 }
