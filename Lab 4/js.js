@@ -2,7 +2,8 @@ document.getElementById("squares_cubes").onclick = squares_cubes;
 document.getElementById("sum_numbers").onclick = sum_numbers;
 document.getElementById("count_numbers").onclick = count_numbers;
 document.getElementById("average_row").onclick = average_row;
-document.getElementById("reverse_number").onclick = invert_number;
+document.getElementById("invert_number").onclick = invert_number;
+document.getElementById("problem_solution").onclick = problem_solution;
 
 function squares_cubes(){
 
@@ -57,10 +58,8 @@ function count_numbers(){
 		}else{
 			if(array[i]>0){
 				positivos+=1;
-				window.alert("Positivo");
 			}else{
 				negativos+=1;
-				window.alert("Negativo");
 			}
 		}
 	}
@@ -90,18 +89,46 @@ function average_row(){
 	}
 
 }
+
 function invert_number(){
 	let numero = prompt("Ingresa un numero");
 	document.write(numero.split("").reverse().join(""));
 	
 }
 
+class Game{
 
+	constructor(a,b,c,d){
+		this.a = a;
+		this.b = b;
+		this.c = c;
+		this.d = d;
+	}
 
-function prueba(){
-	let probability = new Object();
+	getp(){
+		
+		return (this.a/this.b);
+	}
 
+	getq(){
+	
+		return ((1-this.a/this.b)*(1-this.c/this.d));
+	}
 
+	print_probability(){
+		return(this.getp()/(1-this.getq()));
+	}
 }
+
+function problem_solution(){
+	let a = prompt("Ingresa a: ");
+	let b = prompt("Ingresa b: ");
+	let c = prompt("Ingresa c: ");
+	let d = prompt("Ingresa d: ");
+
+	let archers_game =  new Game(a,b,c,d);
+	window.alert(archers_game.print_probability());
+}
+
 
 

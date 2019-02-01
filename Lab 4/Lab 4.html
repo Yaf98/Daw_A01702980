@@ -2,50 +2,54 @@
 <html>
 <head>
 	<title>Laboratorio 4</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
 	
 </head>
 <body>
 	<h1>Laboratorio 4: Fundamentos de JavaScript</h1>
-	<table>
-		<tr>
-			<td>Nombre de la función</td>
-			<td><button id="squares_cubes">Function 1</button></td>
-			
-		</tr>
+	<div id="scripts_section">
+		<header><strong>Scripts</strong></header>
+		<table>
+			<tr>
+				<td>Calcular cuadrados y cubos desde 1 hasta n </td>
+				<td><button id="squares_cubes">Run</button></td>
+				
+			</tr>
 
-		<tr>
-			<td>Nombre de la función</td>
-			<td><button id="sum_numbers">Function 2</button></td>
-		</tr>
+			<tr>
+				<td>Sumar dos numeros aleatorios</td>
+				<td><button id="sum_numbers">Run</button></td>
+			</tr>
 
-		<tr>
-			<td>Nombre de la función</td>
-			<td><button id="count_numbers">Function 3</button></td>
-			
-		</tr>
+			<tr>
+				<td>Contar numeros positivos, negativos y ceros</td>
+				<td><button id="count_numbers">Run</button></td>
+				
+			</tr>
 
-		<tr>
-			<td>Nombre de la función</td>
-			<td><button id="average_row"> Function 4</button></td>
-			
-		</tr>
- 
-		<tr>
-			<td>Nombre de la función</td>
-			<td><button id="reverse_number">Function 5</button></td>
-			
-		</tr>	
-		<tr>
-			<td>Solución al problema</td>
-			<td><button>Solución</button></td>
-		</tr>
-	</table>
-		
+			<tr>
+				<td>Calcular promedio de filas en una matriz</td>
+				<td><button id="average_row">Run</button></td>
+				
+			</tr>
+	 
+			<tr>
+				<td>Invertir un numero</td>
+				<td><button id="invert_number">Run</button></td>
+				
+			</tr>	
+			<tr>
+				<td>Descripción del problema</td>
+				<td><a href="#problema">Ir</a></td>
+			</tr>
+		</table>
+	</div>
 	
+		
 	<br>
 
-	<article>
-		<header>Preguntas sobre JavaScript</header>
+	<article id="article_preguntas">
+		<header><strong>Preguntas sobre JavaScript</strong></header>
 		<br>
 		<strong>¿Qué diferencias y semejanzas hay entre Java y JavaScript?[1]</strong>
 		<ul>
@@ -82,55 +86,43 @@
 		</ol>
 
 		<strong>¿Cómo se declara una variable con alcance local dentro de una función?[4] </strong><br>
-		<p>Para declarar una función con alance 	local sólo basta anteponer la palabra reservada "let"<br>
-			Por ejemplo: <i>let </i> nombre_variable
-		</p>
-
+		<li>
+			Para declarar una función con alance 	local sólo basta anteponer la palabra reservada "let"<br>
+			
+		</li>
+		<li>Por ejemplo: <i>let </i> nombre_variable</li><br>
+		
 		<strong>¿Qué implicaciones tiene utilizar variables globales dentro de funciones?</strong>
 		<ul>
 			<li>Las variables globales en las funciones pueden ser sobre escritas por otros scripts[5]</li>
 
 		</ul>
 		
-		<strong>¿Qué método de String se puede utilizar para buscar patrones con expresiones regulares?¿Para qué podrías utilizar esto en una aplicación web?[6]</strong>
+		<strong>¿Qué método de String se puede utilizar para buscar patrones con expresiones regulares?¿Para qué podrías utilizar esto en una aplicación web?</strong>
 		<ul>
-			<li>search()</li>
-			<li>indexOf()</li>
-			<li>slice()</li>
-			<li>substring()</li>
-			<li>substr()</li>
+			<li>El método <i>match()</i> se utliza para buscar strings que coincidan con expresiones regulares. Las coincidencias encontradas con retornas en un arreglo de objetos y en caso de que no se encuentre ninguna, se retorna <i>null</i>[6]</li>
+			<li>Pienso que se podrían utiliazr expresiones regulares para buscar cadenas de texto en una página, de la misma manera que ocurre cuando presionamos <i>"Ctrl F"</i> en el navegador para buscar palabras. Considero que también se podría utilizar para al auto completado de palabras</li>
 		</ul>
 
-
-
+		<a href="" name="problema"></a>
+		<strong>Descripción del problema</strong><br>
+		<img src="imagenes/problem.jpg" alt="imagen"><br>
+		<button id="problem_solution">Ejecutar solución del problema</button>
+		<h4><a href="https://codeforces.com/problemset/problem/312/B">https://codeforces.com/problemset/problem/312/B</a></h4>
 
 	</article>
-
+	<br>
 	<footer>
-		<strong>Referencias</strong>
+		<header><strong>Referencias</strong></header>
 		<nav>
-			<table>
-				<tr>
-					<td><a href="https://www.java.com/en/download/faq/java_javascript.xml">[1]https://www.java.com/en/download/faq/java_javascript.xml</a></td>
-				</tr>
-				<tr>
-					<td><a href="https://www.w3schools.com/js/js_date_methods.asp">[2]https://www.w3schools.com/js/js_date_methods.asp</a></td>
-				</tr>
-				<tr>
-					<td><a href="https://www.w3schools.com/jsref/jsref_obj_array.asp">[3]https://www.w3schools.com/jsref/jsref_obj_array.asp</a></td>
-				</tr>
-				<tr>
-					<td><a href="https://www.w3schools.com/js/js_let.asp">[4]https://www.w3schools.com/js/js_let.asp</a></td>
-				</tr>
-				<tr>
-					<td><a href="https://www.w3schools.com/js/js_best_practices.asp">[5]https://www.w3schools.com/js/js_best_practices.asp</a></td>
-				</tr>
-				<tr>
-					<td><a href="">[6]</a></td>
-				</tr>
-
-			</table>
-
+			
+			<h4><a href="https://www.java.com/en/download/faq/java_javascript.xml">[1]https://www.java.com/en/download/faq/java_javascript.xml</a></h4>
+			<h4><a href="https://www.w3schools.com/js/js_date_methods.asp">[2]https://www.w3schools.com/js/js_date_methods.asp</a></h4>
+			<h4><a href="https://www.w3schools.com/jsref/jsref_obj_array.asp">[3]https://www.w3schools.com/jsref/jsref_obj_array.asp</a></h4>
+			<h4><a href="https://www.w3schools.com/js/js_let.asp">[4]https://www.w3schools.com/js/js_let.asp</a></h4>
+			<h4><a href="https://www.w3schools.com/js/js_best_practices.asp">[5]https://www.w3schools.com/js/js_best_practices.asp</a></h4>
+			<h4><a href="https://www.w3schools.com/jsref/jsref_match.asp">[6]https://www.w3schools.com/jsref/jsref_match.asp</a></h4>
+		
 		</nav>
 		
 	</footer>
