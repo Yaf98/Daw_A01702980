@@ -1,6 +1,7 @@
 /*
 	El profesor dijo que podíamos usar cualquier cosa para imprimir resultados, no únicamente document.write()
 	Yo use alert()
+	Terminar js
 */
 
 document.getElementById("squares_cubes").onclick = squares_cubes;
