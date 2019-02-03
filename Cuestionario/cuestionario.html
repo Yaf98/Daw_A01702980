@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Cuestionario 1: BD vs DBMS</title>
+	<meta charset="UTF-8"> 
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body class="background">
+
+	<header><h1>Cuestionario 1: BD vs DBMS</h1></header>
+	<section>
+		<strong><h3>¿Qué es entonces una base de datos?</h3></strong>
+		<ul>
+			<li>Es una colección de archivos interrelacionados que contiene información relevante para una organización [1]</li>
+		</ul>
+		<strong><h3>¿En qué casos es conveniente usar bases de datos?[2]</h3></strong>
+		<ul>
+			<li>Cuando nuestra información está contenida en archivos interrelacionados y usuarios o aplicaciones necesitan acceder a ella eficientemente</li>
+			<li>También cuando tenemos un número grande de registros, importa si el conjutno de datos es pequeño</li>
+		</ul>
+		<strong><h3>¿Qué es un sistema de gestión de base de datos - DBMS?</h3></strong>
+		<ul>
+			<li>
+				Un sistema de gestión de bases de datos consiste en una colección de archivos relacionados entre sí, pero no sólo eso, sino que también consiste en un conjunto de programas que nos permiten manipular y acceder a los datos eficientemente. [1]
+			</li>
+			
+		</ul>
+		<strong><h3>Enlista y explica las funciones/responsabilidades que tienen los DBMS. [2]</h3></strong>
+		<ul>
+			<li>Implantación de la integridad: tener claras las restricciones que se tienen que satisfacer y analizar si en algún momento se violan.</li>
+			<li>Implantación de la seguridad: hacer cumplir requisitos de seguridad, es decir, quien tiene acceso a qué información, dependiendo del rol que desempeñen para la utilización de los datos.</li>
+			<li>Copia de seguridad y recuperación:  detectar cualquier fallo y restaurar la base de datos de manera que quede en el estado que existía antes de ocurrir el fallo.</li>
+			<li>Control de concurrencia: conservar la consistencia de los datos mediante el control de la interacción entre usuarios concurrentes. </li>
+			<li>Definir estructuras para el almacenamiento de información </li>
+			<li>Definir procedimientos para manipular los datos </li>
+			<li>Interactuar con el gestor de archivos. Traduce sentencias DML a comandos del sistema de archivos de bajo nivel</li>
+		</ul>
+		<strong><h3>Ejemplifica y justifica en que proyecto de los que has realizado hubiera sido conveniente utilizar una base de datos.</h3></strong>
+		<ul>
+			<li>En el proyecto de Diseño Interactivo pensábamos hacer una página web en la cual se pudiera guardar cualquier tipo de información valioso para el usuario. Podría guardar en un muro personal recursos que le parecieran útiles como vídeos, enlaces a páginas, web, libros, etc. Hubiera sido conveniente utilizar una base de datos para guardar la información relativa a cada usuario, permitiendo así recuperar su información y mantener actualizados los cambios en todo momento.</li>
+		</ul>
+	</section>
+	<hr>
+	<footer>
+		<h4>Referencias:</h4>
+		<p>[1] A. Silberschatz, H. Korth y S.Sudarshan, Fundamentos de bases de datos, 2002, pp 1, 14</p>
+		<p>[2] <a href="https://ejuarez.bitbucket.io/daw/lectura1_DBvsDBMS.html">https://ejuarez.bitbucket.io/daw/lectura1_DBvsDBMS.html </a></p>
+		<p align="center"><i>Manuel Yafté Gallegos López A01702980</i></p>
+	</footer>
+	
+</body>
+</html>
