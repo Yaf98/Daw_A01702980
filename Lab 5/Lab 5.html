@@ -12,31 +12,65 @@
 
 	<article>
 		<header><h2>Valida tu constraseña</h2></header>
-		<form>
-			<input type="password" name="password">
-			<input type="submit" name="submit" value="Validar">
-		</form>
+		<h3>Tu contraseña debe cumplir con las siguientes características:</h3>
+		<ul>
+			<li>Mínimo 8 caracteres</li>
+			<li>Una minúscula</li>
+			<li>Una mayúscula</li>
+			<li>Un número</li>
+			<li>Un caracter especial</li>
+		</ul>
+		<form onsubmit="return false">
+			<input type="text" id="password" placeholder="Password">
+			<input type="text" id="password_confirm" title="Confirm Password" placeholder="Confirm password">
+			<input type="submit" id="submit" title="Validar">
+		</form>	
+
+		<!-- 8, minuscula, mayuscula, caracter, numero-->
+		
+		<h3 id="tam"></h3>
+		<h3 id="min"></h3>
+		<h3 id="may"></h3>
+		<h3 id="car"></h3>
+		<h3 id="num"></h3>
+		<h2 id="ok"></h2>
+		
 	</article>
 
 	<article>
-		<header>Tienda en línea</header>
-		<table>
-			<th>Producto 1</th>
-			<th>Producto 2</th>
-			<th>Producto 3</th>
+		<header><h2>Tienda en línea</h2>
+		</header>
+		<table border="1">
+			<th colspan="2">Imagen del producto</th>
+			<th colspan="2">Imagen del producto</th>
+			<th colspan="2">Imagen del producto</th>
 			<tbody>
 				<tr>
-					<td>Descripción 1</td>
-					<td>Descripción 2</td>
-					<td>Descripsión 3</td>
+					<td colspan="2">Nombre del producto</td>
+					<td colspan="2">Nombre del producto</td>
+					<td colspan="2">Nombre del producto</td>
+				</tr>
+				<tr >
+					<td colspan="2">Precio</td>
+					<td colspan="2">Precio</td>
+					<td colspan="2">Precio</td>
+				</tr>
+				<tr>
+					<td><input type="submit" value="Agregar"></td>
+					<td><input type="submit" value="Eliminar"></td>
+					<td><input type="submit" value="Agregar"></td>
+					<td><input type="submit" value="Eliminar"></td>
+					<td><input type="submit" value="Agregar"></td>
+					<td><input type="submit" value="Eliminar"></td>
+				</tr>
+				<tr>
+					<td colspan="2" id="u1">Unidades:</td>
+					<td colspan="2">Unidades:</td>
+					<td colspan="2">Unidades:</td>
 				</tr>
 			</tbody>
 		</table>
 	</article>
-
-
-
-
 
 	<article>
 		<strong><h3>¿Por qué es una buena práctica usar JavaScript para checar que sean válidos los inputs de las formas antes de enviar los datos al servidor?[1]</h3></strong>
@@ -45,8 +79,7 @@
 				<ul>
 					<li>Prevenir ciber ataques. Los ataques pueden ocacasionar que la página falle o incluso puede relevar información al atacante</li>
 					<li>Las aplicaciones no funcionen como lo esperamos. Si los datos no son evíados de manera correcta, seguramente tendremos </li>
-					<li>Si aseguramos que el usuario tienen una contraseña fuerte, a la vez estamos protegiendo sus datis</li>
-					<li></li>
+					<li>Si aseguramos que el usuario tienen una contraseña fuerte, a la vez estamos protegiendo sus datos</li>
 				</ul>
 			</li>
 		</ul>
@@ -70,5 +103,6 @@
 		<p>[2] <a href="http://www.reydes.com/d/?q=Evadir_Restricciones_de_Datos_Enviados_por_el_Usuario_en_Formularios_HTML"></a>http://www.reydes.com/d/?q=Evadir_Restricciones_de_Datos_Enviados_por_el_Usuario_en_Formularios_HTML</p>
 		<p>[3] <a href=""></a></p>
 	</footer>
+	<script type="text/javascript" src="js.js"></script>
 </body>
 </html>
