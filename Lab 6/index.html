@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Lab 6: Documentos dinámicos con JavaScript</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body id="body">
+	<p class="position">MARCA DE AGUA</p>
+	<section>
+		<header>
+			<h1>Lab 6: Documentos dinámicos con JavaScript</h1>
+		</header>
+		<h2>Style position property</h2>
+		<button id="reminder">Da click para detener molesto recordatorio</button>
+	
+	</section>
+
+	<section>
+		<header>
+			<h2>Tutorial sobre CSS Fonts</h2>
+			<div class="font">
+				Texto que se le dio estilo con Font Family
+				<p class="normal">Texto con font style "normal"</p>
+				<p class="italic">Texto con font style "italic" y bold</p>
+				<p class="oblique">Texto con font style "oblique"</p>
+			</div>
+		</header>
+	</section>
+
+	<section>
+		<header>
+			<h1>h1 font size 2em</h1>
+			<h2>h2 font size 1.8em</h2>
+			<h3>h3 font size 1.5em</h3>
+			<h4>h4 font size 1 em</h4>
+		</header>
+
+		<p class="variant">Font variant con small caps</p>
+		<p>Style visibility</p>
+		<img src="imagenes/js.png" alt="imagen" id="hidden_image"><br>
+		
+		<button id="show_hide">Mostrar/Ocultar Imagen</button>
+		<br>
+		<p id="change_color_size" class="change_properties">Cambiar estilo del documento al pasar el mouse</p>
+	
+	</section>
+
+	<article>
+		<header><h2>Valida tu constraseña</h2></header>
+		<h3>Tu contraseña debe cumplir con las siguientes características:</h3>
+
+		<ul>
+			<li>Mínimo 8 caracteres</li>
+			<li>Una minúscula</li>
+			<li>Una mayúscula</li>
+			<li>Un número</li>
+			<li>Un caracter especial</li>
+		</ul>
+		<p>Confirma tu contraseña una vez que cumpla con las características mencionadas</p>
+
+		
+		<form onsubmit="return false">
+			<input type="text" id="password" placeholder="Contraseña">
+			<br>
+			<input type="text" id="password_confirm" title="Confirmar contraseña" placeholder="Confirmar contraseña">
+			<br><br>
+			<input type="submit" id="submit" title="Validar" class="submit_button">
+		</form>	
+		<!-- 8, minuscula, mayuscula, caracter, numero-->
+		<ul>
+			<div class="characteristics_list">
+				<li id="tam"></li>
+				<li id="min"></li>
+				<li id="may"></li>
+				<li id="num"></li>
+				<li id="car"></li>
+			</div>
+			
+		</ul>	
+			
+			<h2 id="ok"></h2>
+		
+	</article>
+
+	<section>
+		<header>
+			
+		</header>
+		<p>A continuación el drag</p>
+		<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+			
+		</div>
+		<img id="drag" src="imagenes/car.png" draggable="true" ondragstart="drag(event)" alt="imagen">
+		
+			
+		</div>
+	</section>
+
+	<br><br><br><br><br><br><br><br><br><br>
+	<br><br><br><br><br><br>
+	<section>
+		<header><h2>Preguntas</h2></header>
+		<strong><h4>¿Cuáles son las diferencias entre los posibles valores de la propiedad position?[1]</h4></strong>
+		<ul>
+			<li>Static: Los elementos se muestran en el orden en que estan escritos en el documento</li>
+			<li>Absolute: El elemento se coloca relativo a el primer ancestro ancestro que no sea estático</li>
+			<li>Fixed: El elemento se coloca ralativo a la ventana del navegador</li>
+			<li>Sticky: El elemento se posiciona de aucerdo con el desplazamiento del usuario</li>
+			<li>Initial:Establece está própiedad a su valor por defecto</li>
+			<li>Inherit: Herede esta propiedad de su elemento padre</li>
+		</ul>
+		<strong><h4>¿Cuáles son los valores estándar para la propiedad visibility?[2]</h4></strong>
+		<ul>
+			<li>Visible</li>
+			<li>Hidden</li>
+			<li>Collapse</li>
+			<li>Initial</li>
+			<li>Inherit</li>
+		</ul>
+		<strong><h4>¿Qué es el zIndex y para qué sirve?[3]</h4></strong>
+		<ul>
+			<li>Esta propiedad especfica el orden de stack de un elemento</li>
+			<li>Un elemento que tienen mayor orden de stack se encuentra por en frente de uno que tiene menos orden de stack</li>
+			<li>https://css-tricks.com/almanac/properties/z/z-index/</li>
+		</ul>
+
+	</section>
+
+	<footer>
+		<strong>Referencias</strong>
+		<nav>
+			
+			<h4>[1] <a href="https://www.w3schools.com/jsref/prop_style_position.asp">https://www.w3schools.com/jsref/prop_style_position.asp</a></h4>
+			<h4>[2] <a href="https://www.w3schools.com/cssref/pr_class_visibility.asp">https://www.w3schools.com/cssref/pr_class_visibility.asp</a></h4>
+			<h4>[3] <a href="https://www.w3schools.com/jsref/jsref_obj_array.asp"></a></h4>
+			
+		</nav>
+		
+	</footer>
+	</footer>
+	<script type="text/javascript" src="js.js"></script>
+</body>
+</html>
