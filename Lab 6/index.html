@@ -6,19 +6,53 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body id="body">
-	<p class="position">MARCA DE AGUA</p>
-	<section>
-		<header>
-			<h1>Lab 6: Documentos dinámicos con JavaScript</h1>
-		</header>
-		<h2>Style position property</h2>
-		<button id="reminder">Da click para detener molesto recordatorio</button>
 	
-	</section>
+	<a href="" name="inicio" class="topnav"></a>
+	<!--Nav element that only contains anchors -->
+	<nav class="topnav">
+		<a href="#font"><strong>Fonts</strong></a>
+		<a href="#visibility"><strong>Visibility</strong></a>
+		<a href="#validador"><strong>Validador</strong></a>
+		<a href="#drag"><strong>Drag</strong></a>
+		<a href="#preguntas"><strong>Preguntas</strong></a>
+		<a href="#referencias"><strong>Referencias</strong></a>
+	</nav>
+	<div id="rigth">
+		<button id="reminder">Da click para detener molesto recordatorio</button>
+	</div>
 
+	
+
+	<br>
+	<header class="main_header">
+		<header>
+			Lab 6: Documentos dinámicos con JavaScript
+		</header>
+	</header>
+	<!-- Contiene información de contacto-->
+	<address id="adress">
+		Datos de contacto: <br>
+		Manuel Yafté Gallegos López <br>
+		A01702980 <br>
+		manuelyg2097@gmail.com <br>
+		4651075213<br>
+
+	</address>
+	
+	
+	<p class="position">
+		<img src="imagenes/marca.jpg" alt="imagen" width="200px" height="200px"><br>
+		Style position property: fixed
+	</p>
+
+	<br>
+	
+	
+	<hr>
+	
 	<section>
 		<header>
-			<h2>Tutorial sobre CSS Fonts</h2>
+			<h2 id="font">Tutorial sobre CSS Fonts</h2>
 			<div class="font">
 				Texto que se le dio estilo con Font Family
 				<p class="normal">Texto con font style "normal"</p>
@@ -26,28 +60,29 @@
 				<p class="oblique">Texto con font style "oblique"</p>
 			</div>
 		</header>
-	</section>
+	</section>	
+
 
 	<section>
-		<header>
-			<h1>h1 font size 2em</h1>
-			<h2>h2 font size 1.8em</h2>
+		<header id="header">
+			<h1>h1 font size 3em</h1>
+			<h2>h2 font size 2.8em</h2>
 			<h3>h3 font size 1.5em</h3>
 			<h4>h4 font size 1 em</h4>
 		</header>
-
 		<p class="variant">Font variant con small caps</p>
-		<p>Style visibility</p>
-		<img src="imagenes/js.png" alt="imagen" id="hidden_image"><br>
+		<hr>
+		<h2 id="visibility">Tutorial sobre style visibility:</h2>
+		<img src="imagenes/js.png" alt="imagen" id="hidden_image" width="250"><br><br>
 		
 		<button id="show_hide">Mostrar/Ocultar Imagen</button>
 		<br>
 		<p id="change_color_size" class="change_properties">Cambiar estilo del documento al pasar el mouse</p>
 	
 	</section>
-
+	<hr>
 	<article>
-		<header><h2>Valida tu constraseña</h2></header>
+		<header><h2 id="validador">Valida tu constraseña</h2></header>
 		<h3>Tu contraseña debe cumplir con las siguientes características:</h3>
 
 		<ul>
@@ -87,26 +122,23 @@
 		<header>
 			
 		</header>
-		<p>A continuación el drag</p>
-		<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
-			
-		</div>
-		<img id="drag" src="imagenes/car.png" draggable="true" ondragstart="drag(event)" alt="imagen">
+		<h2 id="drag">Mueve la imagen de un cuadro a otro:</h2><br><br>
 		
-			
+		<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+  			<img src="imagenes/car.png" draggable="true" ondragstart="drag(event)" id="drag1">
 		</div>
+		<div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
 	</section>
 
-	<br><br><br><br><br><br><br><br><br><br>
-	<br><br><br><br><br><br>
+	
 	<section>
-		<header><h2>Preguntas</h2></header>
+		<header><h2 id="preguntas">Preguntas</h2></header>
 		<strong><h4>¿Cuáles son las diferencias entre los posibles valores de la propiedad position?[1]</h4></strong>
 		<ul>
 			<li>Static: Los elementos se muestran en el orden en que estan escritos en el documento</li>
 			<li>Absolute: El elemento se coloca relativo a el primer ancestro ancestro que no sea estático</li>
 			<li>Fixed: El elemento se coloca ralativo a la ventana del navegador</li>
-			<li>Sticky: El elemento se posiciona de aucerdo con el desplazamiento del usuario</li>
+			<li>Sticky: El elemento se posiciona de acuerdo con el desplazamiento del usuario</li>
 			<li>Initial:Establece está própiedad a su valor por defecto</li>
 			<li>Inherit: Herede esta propiedad de su elemento padre</li>
 		</ul>
@@ -121,23 +153,23 @@
 		<strong><h4>¿Qué es el zIndex y para qué sirve?[3]</h4></strong>
 		<ul>
 			<li>Esta propiedad especfica el orden de stack de un elemento</li>
-			<li>Un elemento que tienen mayor orden de stack se encuentra por en frente de uno que tiene menos orden de stack</li>
-			<li>https://css-tricks.com/almanac/properties/z/z-index/</li>
+			<li>Un elemento que tienen mayor orden de stack se encuentra por en frente de uno que tiene menor orden de stack</li>
+			<li>Gracias la propiedad z-index podemos controlar como aparecen los elementos, de manera que no aparezcan como se escribieron en el documento. Afecta a los elementos que no tienen la propiedad estática[4]</li>
 		</ul>
 
 	</section>
-
+	<hr>
 	<footer>
-		<strong>Referencias</strong>
+		<strong><h2 id="referencias">Referencias</h2></strong>
 		<nav>
 			
 			<h4>[1] <a href="https://www.w3schools.com/jsref/prop_style_position.asp">https://www.w3schools.com/jsref/prop_style_position.asp</a></h4>
 			<h4>[2] <a href="https://www.w3schools.com/cssref/pr_class_visibility.asp">https://www.w3schools.com/cssref/pr_class_visibility.asp</a></h4>
-			<h4>[3] <a href="https://www.w3schools.com/jsref/jsref_obj_array.asp"></a></h4>
+			<h4>[3] <a href="https://www.w3schools.com/cssref/pr_pos_z-index.asp">https://www.w3schools.com/cssref/pr_pos_z-index.asp</a></h4>
+			<h4>[4] <a href="https://css-tricks.com/almanac/properties/z/z-index/">https://css-tricks.com/almanac/properties/z/z-index/</a></h4>
 			
 		</nav>
 		
-	</footer>
 	</footer>
 	<script type="text/javascript" src="js.js"></script>
 </body>
