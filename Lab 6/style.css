@@ -1,0 +1,103 @@
+body{
+
+}
+
+img{
+	draggable = "true"
+}
+
+form, input{
+	padding-left: 10px;
+	padding-top: 15px;
+	margin-left: 15px;
+	align-content: center;
+	font-size: 20px;
+	width: 500px;
+}
+
+.characteristics_list li,h3{
+	font-weight: bold;
+	font-size: 1.2em;
+	display: inline;
+	list-style-type: none;
+	padding: 0px 0px 0px 0px;
+	margin: auto;
+
+}
+
+.position{
+	font-size: 80px;
+	opacity: 0.2;
+    color: black;
+    position: fixed;
+    text-align: center;
+    left:20%;
+    top: 40%;
+    right: 20%;
+    bottom: 20%;
+  
+}
+
+.submit_button{
+	background-color: #4CAF50;
+	color: white;
+	font-weight: bold;
+	text-align: center;
+	padding: 20px;
+	margin-left :40px;
+	width: auto;
+
+}
+
+.font{
+	font-family: "Courier New", Monospace;
+}
+
+.normal{
+	font-style: normal;
+	font-weight: normal;
+}
+
+.italic{
+	font-weight: bold;
+	font-style: italic;
+}
+
+.oblique{
+	font-family: oblique;
+}
+
+.variant{
+	font-variant: small-caps;
+}
+
+.change_properties{
+	color: red;
+	font-size: 20px;
+	margin: 20px 20px 20px 20px;
+}
+
+#div1,#div2{
+	float: left;
+	border: 1px solid black;
+	width: 225px;
+	height: 225px;
+}
+
+h1{
+	font-size: 2em;
+}
+
+h2{
+	font-size: 1.8em;
+}
+
+h3{
+	font-size: 1.5em;
+}
+
+h4{
+	font-size: 1em;
+}
+
+
