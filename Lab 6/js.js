@@ -126,11 +126,11 @@ function validar_password(){
 var x;
 
 function time(){
-	 x = setInterval(send_message,2000)
+	x = setInterval(send_message,3000);
 }
 
 function send_message(){
-	//alert("Ya validaste tu contraseña\nSi no lo has hecho, ¿qué esperas? Validala en este sitio" );
+	alert("¿Ya validaste tu contraseña?\nSi no lo has hecho, ¿qué esperas? Validala en este sitio");
 }
 
 function stop(){
@@ -147,11 +147,8 @@ function drag(ev) {
 }
 
 function drop(ev) {
-  ev.preventDefault();
-  var data = ev.dataTransfer.getData("text");
-  ev.target.appendChild(document.getElementById(data));
+  	ev.preventDefault();
+  	var data = ev.dataTransfer.getData("text");
+  	ev.target.appendChild(document.getElementById(data));
 }
 
- function mostrar(){
-    document.getElementById("oculto").style.display="block";
-}
