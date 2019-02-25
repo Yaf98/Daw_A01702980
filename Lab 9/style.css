@@ -1,0 +1,58 @@
+/*Terminar css*/
+*{
+	text-align: justify;
+}
+body{
+	margin: 0 auto;
+  	max-width: 50em;
+  	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  	line-height: 1.5;
+  	/*font-style: bold;*/
+}	
+
+#scripts_section{
+	text-align: center;
+	background-color: #fbefcc;
+	padding: 25px;
+}
+
+#article_preguntas{
+	background-color:#f0efef;
+	padding: 25px;	
+}
+
+table{
+	margin-left:auto; 
+    margin-right:auto;
+}
+
+td, tr{
+	
+	border: .5px solid black;
+}
+
+img{
+	width: 700px;
+	margin: 0 auto;
+  	max-width: 50em;
+  	padding: 25px;
+}
+
+h1{
+
+	text-align: center;
+	background-color: #c2d4dd ;
+}
+
+header{
+	font-size: 25px;
+}
+
+a{
+  color: #e81c4f;
+}
+
+footer{
+	background-color:#E0EAFC;
+	padding: 20px;
+}
