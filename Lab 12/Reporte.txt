@@ -1,0 +1,63 @@
+Ejercicio 2
+
+Revisa el contenido de la tabla materiales y determina si existe alguna inconsistencia en el contenido de la tabla. 
+¿Cuál es? ¿A qué se debe? 
+
+--> Existen dos materiales con la misma clave y con el mismo precio. Lo cual quiere decir que su llave primaria no cumple con las restrucciones necesarias
+para garantizar unicidad
+ 
+
+Agrega nuevamente el registro a la tabla de materiales:
+  INSERT INTO Materiales values(1000, 'xxx', 1000)
+
+¿Qué ocurrió?
+
+--> Manda un error diciendo que se esta violando la constraint 'llaveMateriales'
+
+Verifica si la tabla de materiales tiene definido algún constraint (restricción):
+  sp_helpconstraint materiales
+
+¿Qué información muestra esta consulta?
+--> Muestra la información de las constraints definidas para la tabla materiales
+
+¿Qué sentencias utilizaste para definir las llaves primarias?
+--> ALTER TABLE NombreTabla add constraint NombreConstraint PRIMARY KEY (ColumnaLLave)
+
+¿Qué sentencias utilizaste para definir las llaves primarias?
+--> ALTER TABLE Entregan add constraint llaveEntregan PRIMARY KEY (Clave, RFC, Numero, Fecha)
+
+¿Qué sentencias utilizaste para definir este constrait?
+-->  ALTER TABLE tableName drop constraint ConstraintName 
+
+Ejercicio 3: 
+
+¿Qué particularidad observas en los valores para clave, rfc y numero? 
+¿Cómo responde el sistema a la inserción de este registro? 
+--> Los valores no paracen lógicos, no deberíamos tener una clave 0, un RFC que no tiene 13 chars, etc.
+--> El sistema agrega los valores en la última fila
+
+
+¿Qué significa el mensaje que emite el sistema?
+¿Qué significado tiene la sentencia anterior? 
+
+--> Emite un sistema de error diciendo que hay conflicto con la restricción de la llave foránea
+
+  sp_helpconstraint tableName
+¿Qué significan las columnas de esas consultas? 
+ --> Muestra las constraints definidas para la tabla entregan. Estas incluyen las foreign keys y la primary key 
+
+
+Ejercicio 4
+Lista el registro que acabas de crear.
+
+--> 1000	AAAA800101   	5000	2019-03-04 22:25:50.247	0.00
+--> GETDATE() recupera la hora actual 
+--> Si tiene sentido porque no se entregaron ninguno a esta hora
+
+Intenta insertar un registro con cantidad igual o menor que 0.
+¿Cómo responde el sistema?
+¿Qué significa el mensaje?
+
+--> No permite agregar el registro debido a la constraint
+
+Integridad referencial: Los valores de llave foránea deben coincidir con los de la llave asociada a ella o ser nulos
