@@ -1,0 +1,55 @@
+
+<?php include("form_proveedor.php") ?>
+
+
+<?php if(isset($info)): ?>
+	
+	<div class="table table-striped" >
+		<h1 class="text-success">Registro exitoso</h1>
+		<?=$info ?>	
+	</div>
+	
+
+<?php endif ?>
+<hr>
+
+<div class="center_form p-3 mb-2 bg-secondary text-white">
+	<form  action = "<?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>" method = "post">
+
+			<label>Registro Federal de Contribuyentes (RFC)</label>
+			<input type="text" name="rfc" placeholder="RFC" value="<?= $rfc ?>" class="form-control">
+			<span><p class="text-right"><strong><?php echo $rfc_error;?></strong></p></span>
+
+			
+			<label>Razón Social Social </label>
+			<input type="text" name="razon" placeholder="Razón" value="<?= $razon ?>" class="form-control">
+			<span><p class="text-right"><strong><?php echo $razon_error;?></strong></p></span>
+
+			<label>Nombre del Contacto </label>
+			<input type="text" name="nombre" placeholder="Nombre" value="<?= $nombre ?>" class="form-control" >
+			<span><p class="text-right"><strong><?php echo $nombre_error;?></strong></p></span>
+
+			<label>Teléfono del contacto </label>
+			<input type="text" name="telefono" placeholder="Teléfono"  value="<?= $telefono ?>" class="form-control">
+			<span><p class="text-right"><strong><?php echo $telefono_error;?></strong></p></span>
+
+			<label>Banco </label>
+			<input type="text" name="banco" placeholder="Banco" value="<?= $banco ?>" class="form-control" >
+			<span><p class="text-right"><strong><?php echo $banco_error;?></strong></p></span>
+
+
+			<label>Cuenta bancaria</label>
+			<input type="text" name="cuenta" placeholder="Cuenta" value="<?= $cuenta ?>" class="form-control">
+			<span><p class="text-right"><strong><?php echo $cuenta_error?></strong></p></span>
+
+			<label>Clabe</label>
+			<input type="text" name="clabe" placeholder="Clabe"  value="<?= $clabe ?>" class="form-control">
+			<span><p class="text-right"><strong><?php echo $clabe_error?></strong></p></span>
+
+			<div class="text-center">
+				<button name="submit" class="btn btn-primary">Enviar</button>
+			</div>
+	</form>
+</div>
+
+

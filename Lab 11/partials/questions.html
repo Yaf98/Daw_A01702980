@@ -1,0 +1,75 @@
+	<article class="p-3 mb-2 bg-light text-dark" id="preguntas">
+		<header><h4>Preguntas</h4></header>
+		
+		<strong>¿Por qué es una buena práctica separar el controlador de la vista? [1]</strong>
+		<ul>
+			<li>Desarrollar en paralelo. Debido a que la vista esta separada de la lógica es posible que dos personas puedan trabajar simultanéamente en diferentes partes</li>
+			<li>Modificaciones en alguna parte del proyecto no afecta las otras partes</li>
+			
+		</ul>
+
+		<strong>Aparte de los arreglos $_POST y $_GET, ¿qué otros arreglos están predefinidos en php y cuál es su función? [2]</strong>	
+		<ul>
+			<li>$_GLOBALS
+				<ul>
+					<li>Array que contiene las referencias a todas las variables globales del script. Las claves del array son el nombre de las variables.</li>
+				</ul>
+			</li>
+			<li>$_SERVER
+				<ul>
+					<li>Array que contiene cabeceras, rutas y ubicaciones del script</li>
+				</ul>
+			</li>
+
+			<li>$_FILES
+				<ul>
+					<li>Es un array asociativo de elementos subidos al script que sé está ejecutando, a tráves del método POST. Contiene atributos de los archivos como pueden ser : nombre, tamaño, tipo, etc.</li>
+				</ul>
+			</li>
+
+			<li>$_COOKIE
+				<ul>
+					<li>Array asociiativo de variables pasadas al script actual a través de Cookies HTTP</li>
+				</ul>
+			</li>
+
+			<li>$_SESSION
+				<ul>
+					<li>Array asociativo que ccontiene variables de sesión disponibles para el script actual</li>
+				</ul>
+			</li>
+
+			<li>$_REQUEST
+				<ul>
+					<li>Array asociativo que contiene el contenido de $_GET, $_POST y $_COOKIE </li>
+				</ul>
+			</li>
+
+			<li>$_ENV
+				<ul>
+					<li>Similar a _$COOKIE, contiene variables pasadas al script a tráves del entorno</li>
+				</ul>
+			</li>
+		</ul>
+
+		<strong>Explora las funciones de php, y describe 2 que no hayas visto en otro lenguaje y que llamen tu atención.</strong>
+		<ul>
+			<li>array_multisort()
+				<ul>
+					<li>Me llamó la atención está función, ya que ordena arrays, pero lo había visto en otro lenguaje es que puedes pasar más de un array como parámetro y los ordena todos[3]</li>
+				</ul>
+			</li>
+			<li>glob() 
+				<ul>
+					<li>Está función devuelve un array con los nombres de los archivos que coinciden con el patrón especificado[4]</li>
+				</ul>
+			</li>
+		</ul>
+
+		<strong>¿Qué es XSS y cómo se puede prevenir?[5]</strong>
+		<ul>
+			<li>Cross-site scripting (XSS) se refiere a un tipo de ataque donde el atacante introduce código malicioso del lado del cliente</li>
+			<li>Se puede prevenir liberando los outputs con htmlspecialchars() o htmlentities(). Estas funciones caracteres problemáticos en entidades HTML provocando que el código insertado sea un output inofensivo</li>
+		</ul>
+	</article>
+	<hr>
