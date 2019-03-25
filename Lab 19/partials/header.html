@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Laboratorio 19</title>
+	<meta charset=UTF-8>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+	<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+
+	<link rel="stylesheet" type="text/css" href="style.css">	
+
+</head>
+<body>
+		
+  	<nav class="topnav">
+		<a href="#preguntas"><strong>Preguntas</strong></a>
+		<a href="#referencias"><strong>Referencias</strong></a>
+	</nav>
+	<br>
+
+	<h1 class="text-center">Lab 19: AJAX</h1><br>
+	<h6 class="text-right">*Este laboratorio funcionan con AJAX</h3>
+	<hr><br><br>
+	
+	<h4 class="text-center">Busca el nombre del representante de tu proveedor dinámicamente en la base de datos</h2><br>
+	<!-- class="form-control form-control-sm mr-3 w-75"-->
+
+	<div class="center_form">
+		<form>
+        	<input class="col-xs-4 form-control" type="text" id="userInput" placeholder="Search" aria-label="Search" onkeyup="sendRequest()"> 
+    	</form>
+	</div>
+	
+
+    <div id="ajaxResponse"></div>
+    <br>
+    <hr>			
