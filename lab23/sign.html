@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lab 23: Integración con servicios web de terceros </title>
+	<meta charset="utf-8">
+
+	<script src="https://apis.google.com/js/platform.js" async defer></script>
+	<meta name="google-signin-client_id" content="72312480942-31n99la84qafa2lt98krcdeo8hv6jous.apps.googleusercontent.com">
+	 <!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script> 
+	<script type="text/javascript" src="script.js"></script>
+
+
+	
+</head>
+<body>
+	<!-- CON ESTO SE PUEDE ACCEDER POR MEDIO DE GOOGLE -->
+	<!-- CUANDO SE ACCEDE RECUPERA LOS DATOS DEL CORREO DE GMAIL-->
+	<div class="g-signin2" data-onsuccess="onSignIn"></div>
+	<div class="data">
+		<p>Profile Details</p>
+		<img id="pic" class="img-circle" src="">
+		<p>Email Address</p>
+		<p id="email" class="alert alert-danger"></p>
+		<button onclick="signOut()" class="btn btn-danger">Sign Out</button>
+	</div>
+
+
+
+</body>
+</html>
