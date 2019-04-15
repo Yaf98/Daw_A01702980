@@ -1,0 +1,23 @@
+
+	<table align="center" border="1">	
+		<tr>	
+			<td> 
+				<?php if(isset($_SESSION['mensaje_estado'])): ?>
+               		<?=$_SESSION['mensaje_estado'] ?>            
+                <?php endif ?>
+				
+			</td>
+			<td>
+				<form class="right-align" action="upload.php" method="post" enctype="multipart/form-data">
+					<span><h4>Select image to upload:</h4></span>
+					<input type="file" name="fileToUpload" >
+					<input type="submit" name="submit" value="Upload Image">
+				</form>
+			</td>
+		</tr>
+		<tr>
+			<td><i><h4>Imagenes en tu galería:</h4></i></td>
+		</tr>
+		
+	</table>
+	

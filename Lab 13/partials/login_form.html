@@ -1,0 +1,72 @@
+<div class="valign-wrapper row login-box">
+  <div class="col card hoverable s10 pull-s1 m6 pull-m3 l4 pull-l4">
+    <form action="login.php" method = "post" >
+      <div class="card-content">
+          <span class="card-title">Enter credentials</span>
+          <div class="row">
+              <div class="input-field col s12">
+                  <i class="material-icons prefix">mail_outline</i> 
+                  <label for="email">Username</label>
+                  <input type="text"  name="username" id="username" />
+                  
+              </div>
+              <div class="input-field col s12">
+                <i class="material-icons prefix">lock_outline</i>
+                <label for="password">Password </label>
+                <input type="password" class="validate" name="password" id="password" />
+                <div class="center-align">
+                  <?php if(isset($_SESSION['error_incompleto'])): ?>
+                     <?=$_SESSION['error_incompleto']?>                   
+                  <?php endif ?>
+
+                  <?php if(isset($_SESSION['error'])): ?>
+                    <?=$_SESSION['error']?>                   
+                  <?php endif ?>
+                </div>
+               
+              </div>
+              <div class="input-field col s12">
+            
+            <button type="submit" class="btn green waves-effect waves-light col s12" id="submit" name="submit">
+              Entrar
+            </button>
+          </div>
+          </div>
+      </div>
+       
+    </form>
+  </div>
+</div>
+
+<!--
+
+  <div  class="valign-wrapper row login-box">
+    <div class="card-panel">
+      <form class="login-form" action="login.php" method = "post">
+        <div class="row">
+        </div>
+        <div class="row">
+          <div class="input-field ">
+            <i class="material-icons prefix">mail_outline</i>
+            <input class="validate" id="username" name="username" type="text">
+            <label for="email" data-error="wrong" data-success="right">Email</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field ">
+            <i class="material-icons prefix">lock_outline</i>
+            <input id="password" name="password" type="password">
+            <label for="password">Password</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <button type="submit" class="btn waves-effect waves-light col s12" id="submit" name="submit">
+              Entrar
+            </button>
+          </div>
+        </div>
+        
+      </form>
+    </div>
+  </div> -->
